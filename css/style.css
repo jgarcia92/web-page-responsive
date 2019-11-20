@@ -205,6 +205,10 @@ h2 {
 }
 
 .project-imageWrapper {
+    width: 500px;
+}
+
+.project-image {
     width: 100%;
 }
 
