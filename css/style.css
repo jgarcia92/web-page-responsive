@@ -170,7 +170,6 @@ h2 {
     margin-bottom: 30px;
     background: white;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     color: #444;
@@ -195,21 +194,21 @@ h2 {
 }
 
 .project-description {
-    text-align: justify;
+    text-align: left;
     line-height: 2em;
     font-weight: bold;
 }
 
 .project-details {
-    width: 500px;
+    width: 50%;
 }
 
 .project-imageWrapper {
-    width: 500px;
+    width: 50%;
 }
 
 .project-image {
-    width: 100%;
+    max-width: 100%;
 }
 
 .project-title {
@@ -233,8 +232,8 @@ h2 {
 }
 
 .design {
-    width: 480px;
-    margin: 10px;
+    width: 40%;
+    margin: 1%;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 1px 1px 5px #aaa;
@@ -249,8 +248,7 @@ h2 {
 }
 
 .design-image {
-    width: 480px;
-    height: 350px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -259,38 +257,37 @@ h2 {
     background: white;
     border-radius: 15px;
     box-shadow: 1px 1px 5px #666;
-    padding: 10px;
-    margin: 40px 40px;
-    margin-top: -70px;
+    padding: 3%;
+    margin: 10%;
+    margin-top: -15%;
     text-align: center;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 7%;
 }
 
 .design-title {
     font-size: 26px;
     font-family: 'Rajdhani', "Segoe UI", sans-serif;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 3%;
 }
 
 .design-description {
-    margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-bottom: 8%;
+    margin-left: 3%;
+    margin-right: 3%;
     font-weight: bold;
     color: #444444;
 }
 
 .design-url {
     border: 2px solid;
-    padding: 10px 20px;
-    margin-bottom: 20px;
+    padding: .2em 1.2em;
+    margin-bottom: 9%;
     text-decoration: none;
-    color: blue;
     font-size: 18px;
     font-weight: bold;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 1px 1px 5px #aaa;
     text-transform: capitalize;
 }
@@ -467,7 +464,8 @@ h2 {
     background-color: white;
     margin-top: 20px;
     border-radius: 10px;
-    padding-top: 10px;
+    padding: 4%;
+    padding-top: 1%;
 }
 
 
@@ -496,8 +494,90 @@ h2 {
         margin-bottom: 15px;
     }
     /*PORTAFOLIO*/
+    .portfolio h2,
+    .design-facet-title {
+        font-size: 24px;
+        margin: 1em auto;
+    }
+    .project {
+        display: block;
+    }
+    .project-details {
+        width: auto;
+        font-size: 16px;
+    }
+    .project-title {
+        font-size: 1.5em;
+    }
+    .project-subtitle {
+        font-size: .9em;
+    }
+    .project-date {
+        font-size: .7em;
+    }
+    .project-url {
+        font-size: .7em;
+    }
+    .project-description {
+        font-size: .8em;
+        margin: .3em auto;
+    }
+    .project-title,
+    .project-subtitle,
+    .project-date,
+    .project-url {
+        margin: .3em 0;
+    }
+    .project-imageWrapper,
+    .project-image {
+        width: 100%;
+        margin: auto;
+    }
+    .design-title {
+        font-size: 18px;
+    }
+    .design-description,
+    .design-url {
+        font-size: 12px;
+    }
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+    .project-details {
+        font-size: 12px;
+    }
+    .portfolio h2,
+    .design-facet-title {
+        font-size: 18px;
+        margin: 1em auto;
+    }
+    .design-list {
+        display: block;
+    }
+    .design {
+        margin: 10% auto;
+        width: 90%;
+    }
+    .design-title {
+        font-size: 16px;
+    }
+    .design-description,
+    .design-url {
+        font-size: 12px;
+    }
+}
 
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+    .project-details {
+        font-size: 10px;
+    }
+    .portfolio h2,
+    .design-facet-title {
+        font-size: 14px;
+        margin: 1em auto;
+    }
+    .design-description,
+    .design-url {
+        font-size: 10px;
+    }
+}
