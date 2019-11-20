@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Montserrat|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+body {
+    font-family: 'Source Sans Pro', 'Segoe UI', sans-serif;
+    margin: 0 auto;
+    background: whitesmoke;
+}
+
+
+/*HEADER*/
+
+.shadow-header {
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 1px 1px 15px rgb(189, 189, 189);
+    width: 100%;
+    background: transparent;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.header {
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 90px;
+    background-image: url("../images/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgba(255, 255, 255, .95);
+    background-blend-mode: overlay;
+}
+
+.wrapper-menu,
+.wrapper-hero {
+    max-width: 1200px;
+    flex: 1;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.menu {
+    height: inherit;
+    font-size: 20px;
+}
+
+.menu ol {
+    display: flex;
+    height: inherit;
+}
+
+.menu ol li {
+    height: inherit;
+}
+
+.link {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    height: inherit;
+    margin: auto 10px;
+}
+
+.link-focus {
+    font-weight: bolder;
+    border: 1px solid dodgerblue;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+
+.menu ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header a {
+    text-decoration: none;
+    color: dodgerblue;
+    padding: 10px 15px;
+}
+
+.logo {
+    /*margin: top right bottom left*/
+    margin: 15px 0 0 0;
+    display: flex;
+}
+
+
+/*PRESENTACION*/
+
+.hero {
+    margin-top: -11px;
+    background-color: white;
+    display: flex;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("../images/hero-backround.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    background-color: rgba(255, 255, 255, .7);
+    background-blend-mode: overlay;
+}
+
+.hero img {
+    margin: 0 auto;
+}
+
+.hero h1 {
+    /*margin: top right bottom left*/
+    margin: 0 auto;
+    font-family: 'Rajdhani', "Segoe UI", sans-serif;
+    font-size: 42px;
+    line-height: 1.4em;
+    color: #444;
+}
+
+.hero h1 strong {
+    color: rgb(3, 180, 180);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+    color: dodgerblue;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+
+/*PORTAFOLIO*/
+
+.portfolio {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.portfolio h2 {
+    text-transform: uppercase;
+    color: #07f;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-family: 'Rajdhani', "Segoe UI", sans-serif;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.project {
+    /*border: (tamaño), (tipo), (estilo)*/
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #aaa;
+    margin-bottom: 30px;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #444;
+}
+
+.project-title {
+    font-size: 40px;
+    color: #19cc84;
+}
+
+.project-subtitle {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #2b3de1;
+}
+
+.project-date,
+.project-url {
+    margin: 10px 0;
+    font-family: 'Montserrat', "Segoe UI", sans-serif;
+    color: #1269ff;
+}
+
+.project-description {
+    text-align: justify;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+.project-details {
+    width: 500px;
+}
+
+.project-imageWrapper {
+    width: 500px;
+}
+
+.project-title {
+    margin: 0;
+}
+
+
+/*Experiencia*/
+
+.design-facet-title {
+    margin-left: 20px;
+    color: dodgerblue;
+}
+
+.design-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.design {
+    width: 480px;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #aaa;
+    background: #444;
+    margin-bottom: 40px;
+}
+
+.design-imageWrapper {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.design-image {
+    width: 480px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.design-details {
+    margin: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #666;
+    padding: 10px;
+    margin: 40px 40px;
+    margin-top: -70px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.design-title {
+    font-size: 26px;
+    font-family: 'Rajdhani', "Segoe UI", sans-serif;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.design-description {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #444444;
+}
+
+.design-url {
+    border: 2px solid;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px #aaa;
+    text-transform: capitalize;
+}
+
+.purple {
+    color: purple;
+}
+
+.tomato {
+    color: tomato;
+}
+
+.green {
+    color: #19cc84;
+}
+
+.blue {
+    color: #0077ff;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    height: 75px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', "Segoe UI", sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    background-image: url("../images/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    background-blend-mode: overlay;
+    flex-wrap: wrap;
+}
+
+.footer div {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.footer div img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.contact {
+    background-image: radial-gradient( circle at top right, #37ddff, #0086ff 100%);
+    color: white;
+    height: 200px;
+    display: flex;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.contact h3 {
+    color: white;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.contact form {
+    margin: 0 auto;
+}
+
+.social {
+    margin: 0 auto;
+}
+
+.social-link {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.github,
+.instagram,
+.facebook,
+.twitter {
+    background-size: 60px 60px;
+    margin: 0 10px;
+}
+
+.social-link.github {
+    background-image: url("../images/github.svg");
+}
+
+.social-link.instagram {
+    background-image: url("../images/instagram.svg");
+}
+
+.social-link.facebook {
+    background-image: url("../images/facebook.svg");
+}
+
+.social-link.twitter {
+    background-image: url("../images/twitter.svg");
+}
+
+.text-email {
+    padding: 15px 0 15px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 250px;
+    font-weight: bold;
+    border: 0;
+    box-shadow: 1px 0px 5px #666;
+    font-family: 'Montserrat', "Segoe UI", sans-serif;
+    color: #444444;
+    margin-right: 20px;
+    background-image: url("../images/email.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: center;
+    background-position-x: 2px;
+}
+
+.button-send-email {
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    background-image: url("../images/sent.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    border: 0;
+    color: white;
+    box-shadow: 1px 0px 5px #666;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.equipment-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -5px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.equipment img {
+    width: 100%;
+}
+
+.facet-wrapper {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+
+/*Desktop first empezamos por el elemento mas grande*/
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 767px) {
+    /*HEADER*/
+    .wrapper-menu {
+        display: inline;
+    }
+    .header {
+        height: auto;
+    }
+    .header ol {
+        display: inline-block;
+    }
+    .menu,
+    .menu li a,
+    .logo {
+        display: block;
+        text-align: center;
+    }
+    .link-focus {
+        margin-bottom: 15px;
+    }
+    /*PORTAFOLIO*/
+}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 320px) {}
