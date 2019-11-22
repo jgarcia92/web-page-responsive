@@ -195,7 +195,7 @@ h2 {
 
 .project-description {
     text-align: left;
-    line-height: 2em;
+    line-height: 1.5em;
     font-weight: bold;
 }
 
@@ -347,15 +347,16 @@ h2 {
 .contact {
     background-image: radial-gradient( circle at top right, #37ddff, #0086ff 100%);
     color: white;
-    height: 200px;
     display: flex;
+    justify-content: center;
 }
 
 .contact-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
+    height: auto;
+    padding: 2em 0;
     width: 90%;
     max-width: 1200px;
     align-items: center;
@@ -364,7 +365,7 @@ h2 {
 .contact h3 {
     color: white;
     font-size: 28px;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
 }
 
 .contact form {
@@ -427,7 +428,7 @@ h2 {
     padding: 15px;
     width: 50px;
     height: 50px;
-    border-radius: 30px;
+    border-radius: 50px;
     color: white;
     background-color: dodgerblue;
     font-weight: bold;
@@ -451,7 +452,7 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-bottom: -5px;
-    width: 80%;
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -514,13 +515,13 @@ h2 {
         font-size: .9em;
     }
     .project-date {
-        font-size: .7em;
+        font-size: .8em;
     }
     .project-url {
-        font-size: .7em;
+        font-size: .8em;
     }
     .project-description {
-        font-size: 1em;
+        font-size: .8em;
         margin: .3em auto;
     }
     .project-title,
@@ -540,6 +541,24 @@ h2 {
     .design-description,
     .design-url {
         font-size: 12px;
+    }
+    .contact-wrapper {
+        height: auto;
+        display: block;
+        padding: 2em 0;
+        text-align: center;
+    }
+    .contact-wrapper h3 {
+        font-size: xx-large;
+    }
+    .contact form {
+        margin: 0 auto 2em auto;
+    }
+    .footer {
+        height: auto;
+        display: block;
+        text-align: center;
+        padding: 1px;
     }
 }
 
@@ -566,11 +585,28 @@ h2 {
     .design-url {
         font-size: 12px;
     }
+    .text-email {
+        font-size: 16px;
+        padding: .8em auto .8em 0;
+    }
+    .text-email {
+        width: 60%;
+    }
+    .button-send-email {
+        max-width: 15%;
+        width: 15%;
+        margin-top: 1em;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .project-details {
         font-size: 10px;
+    }
+    .project-description,
+    .portfolio,
+    .project-details {
+        text-align: center;
     }
     .portfolio h2,
     .design-facet-title {
@@ -580,5 +616,16 @@ h2 {
     .design-description,
     .design-url {
         font-size: 10px;
+    }
+    .contact-wrapper h3 {
+        font-size: x-large;
+    }
+    .social-link {
+        background-size: 40px;
+        width: 40px;
+        height: 40px;
+    }
+    .contact form .button-send-email {
+        margin-top: 1em;
     }
 }
