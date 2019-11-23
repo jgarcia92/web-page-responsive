@@ -45,6 +45,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.back-header {
+    display: none;
+}
+
 .header {
     background: white;
     font-family: 'Montserrat', sans-serif;
@@ -533,6 +537,7 @@ h2 {
         display: flex;
     }
     .back-header {
+        display: initial;
         width: 100%;
         height: auto;
         padding: 5px;
