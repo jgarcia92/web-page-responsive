@@ -514,6 +514,7 @@ h2 {
     /* box-shadow: 1px 1px 5px gray; */
     color: rgb(147, 181, 243);
     top: 4%;
+    left: 2px;
     z-index: 2;
 }
 
@@ -595,7 +596,7 @@ h2 {
         margin-top: 0;
     }
     .hero h1 {
-        margin-top: 2%;
+        margin-top: 4%;
         font-size: 2em;
         width: 100%;
         text-align: center;
