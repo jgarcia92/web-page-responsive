@@ -512,7 +512,7 @@ h2 {
     height: auto;
     align-items: center;
     /* box-shadow: 1px 1px 5px gray; */
-    color: rgb(147, 181, 243);
+    color: rgb(127, 171, 253);
     top: 4%;
     left: 2px;
     z-index: 2;
@@ -538,7 +538,7 @@ h2 {
         display: flex;
     }
     .back-header {
-        display: initial;
+        display: block;
         width: 100%;
         height: auto;
         padding: 5px;
@@ -724,6 +724,12 @@ h2 {
         background-size: 50px;
         width: 50px;
         height: 50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .burger-wrapper {
+        top: 1%;
     }
 }
 
