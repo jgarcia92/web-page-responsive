@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 body {
-    font-family: 'Source Sans Pro', 'Segoe UI', sans-serif;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
     margin: 0 auto;
     background: whitesmoke;
 }
@@ -67,13 +67,17 @@ body {
     font-size: 16px;
     height: inherit;
     margin: auto 10px;
+    text-decoration: none;
+    color: dodgerblue;
+    padding: 8px 15px;
 }
 
 .link-focus {
     font-weight: bolder;
-    border: 1px solid dodgerblue;
-    border-radius: 12px;
-    padding: 0 10px;
+    border: 2px solid dodgerblue;
+    border-radius: 15px;
+    padding: auto 10px;
+    height: 1em;
 }
 
 .menu ol,
@@ -81,12 +85,6 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.header a {
-    text-decoration: none;
-    color: dodgerblue;
-    padding: 10px 15px;
 }
 
 .logo {
@@ -102,7 +100,7 @@ ul {
     margin-top: -11px;
     background-color: white;
     display: flex;
-    border-bottom: 5px solid rgb(255, 255, 255);
+    border-bottom: 5px solid rgba(0, 174, 255, 0.616);
     margin-bottom: 20px;
     align-items: center;
     flex-wrap: wrap;
@@ -125,7 +123,7 @@ ul {
     /*margin: top right bottom left*/
     width: 60%;
     margin: 0 auto;
-    font-family: 'Rajdhani', "Segoe UI", sans-serif;
+    font-family: 'Montserrat', "Segoe UI", sans-serif;
     font-size: 42px;
     line-height: 1.5em;
     color: #444;
@@ -140,7 +138,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
     color: dodgerblue;
 }
 
@@ -162,8 +160,8 @@ h2 {
     color: #07f;
     font-weight: normal;
     letter-spacing: 2px;
-    font-family: 'Rajdhani', "Segoe UI", sans-serif;
-    margin-bottom: 40px;
+    font-family: 'Montserrat', "Segoe UI", sans-serif;
+    margin: 0 auto 1em auto;
     font-size: 30px;
 }
 
@@ -272,7 +270,7 @@ h2 {
 
 .design-title {
     font-size: 26px;
-    font-family: 'Rajdhani', "Segoe UI", sans-serif;
+    font-family: 'Montserrat', "Segoe UI", sans-serif;
     margin-bottom: 0;
     margin-top: 3%;
 }
@@ -480,6 +478,9 @@ h2 {
 @media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 767px) {
+    .link {
+        margin: 10px;
+    }
     /*HERO*/
     .hero {
         height: auto;
@@ -488,10 +489,11 @@ h2 {
     .hero h1 {
         margin-top: 2%;
         font-size: 2em;
-        width: 60%;
+        width: 100%;
+        text-align: center;
     }
     .hero img {
-        width: 40%;
+        width: 50%;
     }
     .wrapper-hero {
         padding: 0 5%;
@@ -519,7 +521,6 @@ h2 {
     .portfolio h2,
     .design-facet-title {
         font-size: 24px;
-        margin: 1em auto;
     }
     .project {
         display: block;
@@ -584,15 +585,14 @@ h2 {
 
 @media screen and (max-width: 480px) {
     .hero h1 {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
     .project-details {
-        font-size: 12px;
+        font-size: 14px;
     }
     .portfolio h2,
     .design-facet-title {
         font-size: 18px;
-        margin: 1em auto;
     }
     .design-list {
         display: block;
@@ -606,7 +606,7 @@ h2 {
     }
     .design-description,
     .design-url {
-        font-size: 12px;
+        font-size: 14px;
     }
     .text-email {
         font-size: 16px;
@@ -642,7 +642,6 @@ h2 {
     .portfolio h2,
     .design-facet-title {
         font-size: 14px;
-        margin: 1em auto;
     }
     .design-description,
     .design-url {
