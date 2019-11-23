@@ -1,7 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lilita+One|Montserrat|Source+Sans+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?l4ln06');
+    src: url('../fonts/icomoon.eot?l4ln06#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?l4ln06') format('truetype'), url('../fonts/icomoon.woff?l4ln06') format('woff'), url('../fonts/icomoon.svg?l4ln06#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e900";
+}
+
 body {
     font-family: 'Montserrat', 'Segoe UI', sans-serif;
     margin: 0 auto;
@@ -121,10 +146,10 @@ ul {
 
 .hero h1 {
     /*margin: top right bottom left*/
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
     font-family: 'Montserrat', "Segoe UI", sans-serif;
-    font-size: 42px;
+    font-size: 40px;
     line-height: 1.5em;
     color: #444;
 }
@@ -473,13 +498,91 @@ h2 {
 }
 
 
+/*MENU HAMBURGUESA*/
+
+.burger-wrapper {
+    display: none;
+    position: fixed;
+    /* width: 100%; */
+    justify-content: flex-start;
+    height: auto;
+    align-items: center;
+    /* box-shadow: 1px 1px 5px gray; */
+    color: rgb(147, 181, 243);
+    top: 4%;
+    z-index: 2;
+}
+
+.burger-button {
+    font-size: 70px;
+    border-radius: 5px;
+    line-height: 50px;
+}
+
+.burger-wrapper p {
+    margin: 0 auto 0 auto;
+}
+
+
 /*Desktop first empezamos por el elemento mas grande*/
 
 @media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 767px) {
+    .burger-wrapper {
+        display: flex;
+    }
+    .back-header {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+    .shadow-header {
+        position: fixed;
+        z-index: 1;
+    }
+    .menu {
+        position: fixed;
+    }
+    .menu.isActive {
+        left: 0;
+    }
+    .shadow-header,
+    .header {
+        height: auto;
+    }
+    .header ol {
+        display: inline-block;
+    }
+    .menu,
+    .menu li a,
+    .logo {
+        display: block;
+        text-align: center;
+    }
+    .menu li a {
+        font-size: 20px;
+        text-align: left;
+    }
+    .menu {
+        width: 100%;
+        background: rgba(255, 255, 255, .9);
+        padding: 20px;
+        left: -120%;
+    }
+    .menu ol {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 7%;
+        flex-wrap: wrap;
+    }
     .link {
         margin: 10px;
+    }
+    .logo img,
+    .back-aux {
+        width: 20%;
     }
     /*HERO*/
     .hero {
@@ -501,21 +604,6 @@ h2 {
     /*HEADER*/
     .wrapper-menu {
         display: inline;
-    }
-    .header {
-        height: auto;
-    }
-    .header ol {
-        display: inline-block;
-    }
-    .menu,
-    .menu li a,
-    .logo {
-        display: block;
-        text-align: center;
-    }
-    .link-focus {
-        margin-bottom: 15px;
     }
     /*PORTAFOLIO*/
     .portfolio h2,
@@ -584,6 +672,12 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
+    .burger-wrapper {
+        top: 2%;
+    }
+    .burger-button {
+        font-size: 52px;
+    }
     .hero h1 {
         font-size: 1.2em;
     }
@@ -628,6 +722,12 @@ h2 {
 }
 
 @media screen and (max-width: 320px) {
+    .burger-wrapper {
+        top: 1%;
+    }
+    .burger-button {
+        font-size: 40px;
+    }
     .hero h1 {
         font-size: .9em;
     }
